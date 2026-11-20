@@ -1,0 +1,5 @@
+﻿*.pem
+*.ppk
+.env
+__pycache__/
+*.tar.gz

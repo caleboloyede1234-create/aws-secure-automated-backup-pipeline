@@ -1,0 +1,13 @@
+﻿[Unit]
+Description=Data Generator Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /var/app/data/generate-data.sh
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
